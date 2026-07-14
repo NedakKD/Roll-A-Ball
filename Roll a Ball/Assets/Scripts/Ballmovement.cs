@@ -3,19 +3,27 @@ using UnityEngine.InputSystem;
 
 public class Ballmovement : MonoBehaviour
 {
+    Rigidbody rb;
+
     float inputX;
     float inputY;
-    public int Speed = 10;
+
+    float Speed = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        Vector3 movement = new Vector3(inputX, 0f, inputY);
         
+        rb.AddForce(movement * Speed);
+
     }
 
     void OnMove (InputValue moveValue)

@@ -392,7 +392,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1dd4f6b7d997344af92b972d3f3183, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ballmovement
+  m_EditorClassIdentifier: '::'
+  Speed: 10
 --- !u!54 &725204603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -447,7 +448,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &1277889581
@@ -1086,7 +1087,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 67
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1112,8 +1113,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119865180}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3746217, y: 0.0069537256, z: -0.0028097183, w: 0.92714745}
-  m_LocalPosition: {x: -5.34, y: 12.475504, z: -18.52}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -3.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
