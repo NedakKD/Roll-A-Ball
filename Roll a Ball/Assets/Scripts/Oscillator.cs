@@ -15,14 +15,19 @@ public class Oscillator : MonoBehaviour
     private void Start()
     {
         startPosition = transform.position;
-
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       float newY = startPosition.y + Mathf.Sin(Time.time * speed) * range;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+
+        
+        transform.position = new Vector3(transform.position.x,(Random.Range(0f, 1f)* Time.time * speed)* range, transform.position.z);
+
+        //float newY = startPosition.y + Mathf.Sin(Time.time * speed) * range;
+        //transform.position = new Vector3(transform.position.x, newY, transform.position.z);
        
     }
 }
