@@ -34,6 +34,12 @@ public class Ballmovement : MonoBehaviour
         inputY = moveVector.y;
 
     }
-
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Collectible") 
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
 
