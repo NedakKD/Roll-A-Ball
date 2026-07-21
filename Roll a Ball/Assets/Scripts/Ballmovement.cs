@@ -8,6 +8,8 @@ public class Ballmovement : MonoBehaviour
     float inputX;
     float inputY;
 
+    public GameController GameManager;
+
     float Speed = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,7 +41,12 @@ public class Ballmovement : MonoBehaviour
         if (other.tag == "Collectible") 
         {
             other.gameObject.SetActive(false);
+
+            ScoreValue scoreValue = other.gameObject.GetComponent<ScoreValue>();
+
+            GameManager.AddScore(scoreValue.Value);
         }
+        
     }
 }
 
